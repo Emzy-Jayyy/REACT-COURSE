@@ -1,0 +1,104 @@
+.company-contact-section {
+    /* height: 100vh; */
+    padding: 60px;
+}
+
+
+.company-contact-section h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.company-contact-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.company-contact-details {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.company-details {
+    background-color: yellowgreen;
+    width: 480px;
+    height: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 5px;
+}
+
+.company-details a {
+    color: #737171;
+}
+
+.company-email,
+.company-email .icon {
+    background-color: #FFF1F2;
+}
+
+.company-email .icon i {
+    color: #FB7185;
+}
+
+.company-number {
+    background-color: #F0F9FF;
+}
+
+.company-number a {
+    text-decoration: none;
+}
+
+.company-number .icon i {
+    color: #60A5FA;
+}
+
+.icon i {
+    font-size: 50px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 1020px;
+    min-height: 90px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #CCCCCC;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    width: 379px;
+    height: 100px;
+    background-color: #0F172A;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+
+::placeholder {
+    font-size: 20px;
+    font-weight: medium;
+}
+
+form div {
+    text-align: center;
+}
