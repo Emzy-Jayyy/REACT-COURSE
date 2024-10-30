@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import './services.css'
 import ServiceCard from './Component/ServiceCard'
 import  Axios  from 'axios';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const [services, setServices] = useState([])
@@ -43,10 +44,13 @@ const Services = () => {
                     {/* <ServiceCard/>
                     <ServiceCard/>
                     <ServiceCard/> */}
+                    
 
                     {
                       services && services?.map(service => (
-                        <ServiceCard title = {service?.name} image={service?.image} desc ={service?.desc} />
+                        <Link to = {`/services/${service?.name}`}>
+                          <ServiceCard title = {service?.name} image={service?.image} desc ={service?.desc} />
+                        </Link>
                       ))
                     }
                   </div>

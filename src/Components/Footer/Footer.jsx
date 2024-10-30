@@ -13,7 +13,7 @@ const Footer = () => {
     const value = event.target.value;
 
     selectedDays((prev)=> {
-        event.target.checked ? [...prev, value] : prev.filter((day) => day.value !==  value)
+       return event.target.checked ? [...prev, value] : prev.filter((day) => day.value !==  value)
     });
 
     console.log(selectedDays);
